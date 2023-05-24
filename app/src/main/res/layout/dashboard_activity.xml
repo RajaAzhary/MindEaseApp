@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/mindEase_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/mindEase_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MindEase"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/purple_500"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/health_tracker_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Daily Health Tracker"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background" />
+
+        <Button
+            android:id="@+id/forum_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Forum"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background" />
+
+        <Button
+            android:id="@+id/counselling_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Online Counselling"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background" />
+
+        <Button
+            android:id="@+id/quiz_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Health Quiz"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background" />
+
+    </LinearLayout>
+
+</RelativeLayout>
