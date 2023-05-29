@@ -1,0 +1,338 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/mindEase_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/mindEase_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MindEase"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/mindEase_layout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/select_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select date: "
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/date_picker_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a date"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mood_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/date_layout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/mood_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How was your mood?"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/mood_happy"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_mood_happy"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/mood_neutral"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_mood_neutral"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/mood_sad"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_mood_sad"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/mood_angry"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_mood_angry"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sleep_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/mood_layout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/sleep_tracker_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How many hours did you sleep?"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sleep_hours_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/rate_sleep_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate your sleep"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/sleep_rate_goodnight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_sleep_rate_goodnight"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/sleep_rate_neutral"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_sleep_rate_neutral"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/sleep_rate_not_sleepy"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_sleep_rate_not_sleepy"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/sleep_rate_no_sleep"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_sleep_rate_no_sleep"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exercise_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/sleep_layout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/exercise_today_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did you exercise today?"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/exercise_yes_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:layout_marginEnd="16dp" />
+
+            <CheckBox
+                android:id="@+id/exercise_no_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/what_exercise_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What exercise did you do today?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/exercise_options_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/food_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/exercise_layout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/food_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How many times did you eat today?"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/food_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/water_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How many glasses of water did you drink today?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/water_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comment_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share your thoughts today"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/comment_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write something..."
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="5"
+            android:background="@android:color/white"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/white"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/save_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save and Submit"
+            android:layout_gravity="end"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
