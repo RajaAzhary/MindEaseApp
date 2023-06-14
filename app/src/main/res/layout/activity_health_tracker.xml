@@ -26,7 +26,7 @@
             android:id="@+id/mindEase_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MindEase"
+            android:text="Health Tracker"
             android:textSize="24sp"
             android:textColor="@color/white" />
 
@@ -82,28 +82,28 @@
                 android:id="@+id/mood_happy"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_mood_happy"
+                android:src="@mipmap/ic_mood_happy"
                 android:padding="8dp" />
 
             <ImageView
                 android:id="@+id/mood_neutral"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_mood_neutral"
+                android:src="@mipmap/ic_mood_neutral"
                 android:padding="8dp" />
 
             <ImageView
                 android:id="@+id/mood_sad"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_mood_sad"
+                android:src="@mipmap/ic_mood_sad"
                 android:padding="8dp" />
 
             <ImageView
                 android:id="@+id/mood_angry"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_mood_angry"
+                android:src="@mipmap/ic_mood_angry"
                 android:padding="8dp" />
 
         </LinearLayout>
@@ -152,28 +152,28 @@
                 android:id="@+id/sleep_rate_goodnight"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_sleep_rate_goodnight"
+                android:src="@mipmap/ic_sleep_rate_goodnight"
                 android:padding="8dp" />
 
             <ImageView
                 android:id="@+id/sleep_rate_neutral"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_sleep_rate_neutral"
+                android:src="@mipmap/ic_sleep_rate_neutral"
                 android:padding="8dp" />
 
             <ImageView
                 android:id="@+id/sleep_rate_not_sleepy"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_sleep_rate_not_sleepy"
+                android:src="@mipmap/ic_sleep_rate_not_sleepy"
                 android:padding="8dp" />
 
             <ImageView
                 android:id="@+id/sleep_rate_no_sleep"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_sleep_rate_no_sleep"
+                android:src="@mipmap/ic_sleep_rate_no_sleep"
                 android:padding="8dp" />
 
         </LinearLayout>
